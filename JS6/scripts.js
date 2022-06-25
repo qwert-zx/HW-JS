@@ -99,7 +99,6 @@ utm_source=main_tile&utm_medium=smartdo200#zag3 , получит адрес
 может и не быть каких-либо составляющих. Ф-ция должна возвращать
 массив. */
 
-
 let printLink = [];
 const breakdownLink = function(link){
     return printLink.concat(link.match(/(https?:\/\/[a-z0-9]+(?:-|\.)?[a-z0-9]+\.[a-z]{2,10}\/?)/gmi), link.match(/\?[^\?\?\$#]+\/?/gmi), link.match(/#[a-z0-9]+/gmi));

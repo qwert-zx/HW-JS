@@ -20,7 +20,6 @@ let Kettle = function(){
 
     this.show = function(){
         if (this.btn === true){
-            /* alert ('Время нагрева воды до 90 градусов займет' + ' ' +  Math.floor(t) + " " + 'cекунд'); */
             alert ('Вода закипит за ' + Math.floor(time / 60) + ' ' + 'минут(ы)' + ' ' + Math.floor(time % 60) + ' ' + 'секунд.');
         } else alert('Увы чайник не включен...')
     };

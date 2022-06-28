@@ -20,7 +20,7 @@ let Kettle = function(){
 
     this.show = function(){
         if (this.btn === true){
-            alert ('Вода закипит за ' + Math.floor(time / 60) + ' ' + 'минут(ы)' + ' ' + Math.floor(time % 60) + ' ' + 'секунд.');
+            alert ('Вода закипит за ' + Math.floor(time / 60) + ' ' + 'минут(ы)' + ' ' + Math.floor(time % 60) + ' ' + 'секунд(ы).');
         } else alert('Увы чайник не включен...')
     };
 };

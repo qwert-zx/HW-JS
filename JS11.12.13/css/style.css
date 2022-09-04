@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ecffca;
+}
+.contacts {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    background-color: rgb(215, 255, 140);
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+    border-radius: 10px;
+}
+.contacts__form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contacts__form input {
+    padding: 10px;
+    background-color: #ecffca;
+    border: none;
+    border-radius: 10px;
+    min-width: 50vh;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid rgb(166, 255, 0);
+    box-shadow: 0 0 10px  rgb(166, 255, 0);
+    display: flex;
+    justify-content: center;
+}
+.contacts__btn {
+    box-shadow: 0 0 10px  rgb(166, 255, 0);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(166, 255, 0);
+    cursor: pointer;
+    color: #7c7c7c;
+    font-size: 16px;
+    min-width: 50vh;
+    border: 2px solid #ecffca;
+}
+.contacts__list {
+    display: flex;
+    justify-content: center;
+
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    }
+.contacts__list li {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    position: relative;
+}
+.contacts__page {
+    padding: 10px;
+    cursor: pointer;
+    min-width: calc(50vh - 150px) ;
+    border: 2px solid rgb(166, 255, 0);
+    border-radius: 10px;
+    background-color: #ecffca;
+    box-shadow: 0 0 10px  rgb(166, 255, 0);
+}
+
+.btn__call, .btn__email, .btn__edit {
+    display: flex;
+    min-width: 50px;
+    background-color: #a6ff00;
+    justify-content: center;
+    border: 1px solid #ecffca;
+    border-radius: 50%;
+    background: no-repeat;
+    background-position: center;
+    background-color: #a6ff00;
+    box-shadow: 0 0 10px  rgb(166, 255, 0);
+    cursor: pointer;
+}
+.btn__call {
+    background-image: url(/img/tel.png);
+}
+.btn__email {
+    background-image: url(/img/email.png);
+}
+.btn__edit {
+    background-image: url(/img/edit.png);
+}
+.btn__call a {
+    width: 45px;
+    height: 45px;
+}
+.btn__remove {
+    background-color: #a6ff00;
+    position: absolute;
+    right: 39%;
+    top: -23%;
+    font-size: 20px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ecffca;
+    color: #ecffca;
+    font-weight: bold;
+    cursor: pointer;
+}
+.popup__edit {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.popup__edit div {
+    background-color: #a6ff00;;
+    width: 30%;
+    padding: 2%;
+    font-size: 28px;
+    border: 1px solid #ecffca;
+    border-radius: 15px;
+}
+.hiden {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+.active {
+    opacity: 1;
+}
